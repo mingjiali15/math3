@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+#number-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+#number-pad button {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#number-pad button:nth-child(10) {
+    background-color: red;
+    color: white;
+}
+
+#number-pad button:nth-child(12) {
+    background-color: green;
+    color: white;
+}
+
+.correct {
+    color: green;
+    font-size: 1.5em;
+}
+
+.incorrect {
+    color: red;
+    font-size: 1.5em;
+}
+
+.answer {
+    color: blue;
+    font-size: 1.5em;
+}
